@@ -8,6 +8,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.github.dcendents:android-maven-plugin:1.2'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -19,6 +21,14 @@ allprojects {
     repositories {
         google()
         jcenter()
+    }
+    project.ext {
+        compileSdkVersion = 26
+        buildToolsVersion = "26.0.2"
+        minSdkVersion = 16
+        targetSdkVersion = 26
+        appCompat = "26.1.0"
+        firebase = "11.4.2"
     }
 }
 
