@@ -8,9 +8,8 @@ Date Picker | Time Picker
 ---- | ----
 ![Date Picker](https://github.com/shetmobile/MeowDateTimePicker/raw/master/resources/date.png) | ![Time Picker](https://github.com/shetmobile/MeowDateTimePicker/raw/master/resources/time.png)
 
-# Usage
 The library follows the same API as other pickers in the Android framework.
-### Download
+# Download
 build.gradle (project path)
 ```groovy
 buildscript {
@@ -32,6 +31,7 @@ dependencies {
   compile 'ir.he.meowdatetimepicker:library:1.0.1'
 }
 ```
+# Usage
 ### Initialization
 init library in Application and refer that in **AndroidManifest.xml**
 ```java
@@ -50,8 +50,6 @@ public class MyApplication extends Application {
     
 }
 ```
-# Usage
-The library follows the same API as other pickers in the Android framework.
 After adding the library, for using a picker in your project you need to:
 
 1. Implement an `OnTimeSetListener`/`OnDateSetListener`
