@@ -30,7 +30,7 @@ dependencies {
 }
 ```
 # Initialization
-init library in Application and refer that in **AndroidManifest.xml**
+Call library init function in Application and refer that in **AndroidManifest.xml**
 ```java
 public class MyApplication extends Application {
 
@@ -47,7 +47,7 @@ public class MyApplication extends Application {
 
 }
 ```
-add vibrate permission
+Add vibrate permission
 ```xml
 <manifest >
 
