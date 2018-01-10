@@ -47,6 +47,19 @@ public class MyApplication extends Application {
 
 }
 ```
+add vibrate permission
+```xml
+<manifest >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApplication"
+        ...
+    </application>
+
+</manifest>
+```
 # Usage
 The library follows the same API as other pickers in the Android framework.
 After adding the library, for using a picker in your project you need to:
