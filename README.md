@@ -29,9 +29,7 @@ dependencies {
   compile 'ir.he.meowdatetimepicker:library:1.0.1'
 }
 ```
-# Usage
-The library follows the same API as other pickers in the Android framework.
-### Initialization
+# Initialization
 init library in Application and refer that in **AndroidManifest.xml**
 ```java
 public class MyApplication extends Application {
@@ -46,9 +44,11 @@ public class MyApplication extends Application {
         Typeface light = Typeface.createFromAsset(getAssets(), "fonts/IRANSansMobile_Light.ttf");
         MeowTypefaceHelper.init(regular, medium, bold, light);
     }
-    
+
 }
 ```
+# Usage
+The library follows the same API as other pickers in the Android framework.
 After adding the library, for using a picker in your project you need to:
 
 1. Implement an `OnTimeSetListener`/`OnDateSetListener`
