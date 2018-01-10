@@ -7,8 +7,6 @@ This library offers a hijri/shamsi (Iran Calendar) Date Picker and a normal time
 Date Picker | Time Picker
 ---- | ----
 ![Date Picker](https://github.com/shetmobile/MeowDateTimePicker/raw/master/resources/date.png) | ![Time Picker](https://github.com/shetmobile/MeowDateTimePicker/raw/master/resources/time.png)
-
-The library follows the same API as other pickers in the Android framework.
 # Download
 build.gradle (project path)
 ```groovy
@@ -32,6 +30,7 @@ dependencies {
 }
 ```
 # Usage
+The library follows the same API as other pickers in the Android framework.
 ### Initialization
 init library in Application and refer that in **AndroidManifest.xml**
 ```java
