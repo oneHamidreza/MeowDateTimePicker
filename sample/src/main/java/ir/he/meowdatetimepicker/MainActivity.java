@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                         calendar.getPersianMonth(),
                         calendar.getPersianDay()
                 );
-                datePickerDialog.setThemeDark(true);
+//                datePickerDialog.setThemeDark(true);
                 datePickerDialog.show(getFragmentManager(), "date");
             }
         });
@@ -44,26 +44,16 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         bt_time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 PersianCalendar calendar = new PersianCalendar(Calendar.getInstance().getTimeInMillis());
-                DatePickerDialog datePickerDialog = DatePickerDialog.newInstance(
+                calendar.setTimeZone(TimeZone.getDefault());
+                TimePickerDialog timePickerDialog = TimePickerDialog.newInstance(
                         MainActivity.this,
-                        calendar.getPersianYear(),
-                        calendar.getPersianMonth(),
-                        calendar.getPersianDay()
+                        calendar.get(PersianCalendar.HOUR_OF_DAY),
+                        calendar.get(PersianCalendar.MINUTE),
+                        false
                 );
-//                datePickerDialog.setThemeDark(true);
-                datePickerDialog.show(getFragmentManager(), "date");
-//                PersianCalendar calendar = new PersianCalendar(Calendar.getInstance().getTimeInMillis());
-//                calendar.setTimeZone(TimeZone.getDefault());
-//                TimePickerDialog timePickerDialog = TimePickerDialog.newInstance(
-//                        MainActivity.this,
-//                        calendar.get(PersianCalendar.HOUR_OF_DAY),
-//                        calendar.get(PersianCalendar.MINUTE),
-//                        false
-//                );
-////                timePickerDialog.setThemeDark(true);
-//                timePickerDialog.show(getFragmentManager(), "timePickerDialog");
+//                timePickerDialog.setThemeDark(true);
+                timePickerDialog.show(getFragmentManager(), "time");
             }
         });
     }
