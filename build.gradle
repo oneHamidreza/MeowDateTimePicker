@@ -25,7 +25,7 @@ allprojects {
     project.ext {
         compileSdkVersion = 26
         buildToolsVersion = "26.0.2"
-        minSdkVersion = 16
+        minSdkVersion = 15
         targetSdkVersion = 26
         appCompat = "26.1.0"
         firebase = "11.4.2"
