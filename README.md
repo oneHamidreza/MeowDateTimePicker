@@ -20,7 +20,7 @@ buildscript {
 Android Studio 3+
 ```groovy
 dependencies {
-  implementation 'ir.he.meowdatetimepicker:library:1.0.1'
+  implementation 'ir.he.meowdatetimepicker:library:1.0.2'
 }
 ```
 Android Studio 2 or lower
