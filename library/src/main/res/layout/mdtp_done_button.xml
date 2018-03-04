@@ -20,6 +20,7 @@
     android:orientation="horizontal"
     android:background="@android:color/transparent"
     android:gravity="left"
+    android:layoutDirection="ltr"
     android:layout_gravity="center_vertical"
     android:paddingBottom="8dp">
 
