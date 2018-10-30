@@ -26,11 +26,11 @@
         android:layout_height="@dimen/mdtp_selected_calendar_layout_height"
         android:orientation="vertical" >
 
-        <include layout="@layout/mdtp_date_picker_selected_date" />
+        <include layout="@layout/jmdtp_date_picker_selected_date" />
     </LinearLayout>
 
-    <include layout="@layout/mdtp_date_picker_view_animator" />
+    <include layout="@layout/jmdtp_date_picker_view_animator" />
 
-    <include layout="@layout/mdtp_done_button" />
+    <include layout="@layout/jmdtp_done_button" />
 
 </LinearLayout>

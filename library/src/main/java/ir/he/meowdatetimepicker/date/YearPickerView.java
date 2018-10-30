@@ -29,13 +29,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import ir.he.meowdatetimepicker.MeowTypefaceHelper;
 import ir.he.meowdatetimepicker.R;
 import ir.he.meowdatetimepicker.date.DatePickerDialog.OnDateChangedListener;
 import ir.he.meowdatetimepicker.utils.LanguageUtils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Displays a selectable list of years.
@@ -77,7 +77,7 @@ public class YearPickerView extends ListView implements OnItemClickListener, OnD
             years.add(String.format("%d", year));
         }
         years = LanguageUtils.getPersianNumbers(years);
-        mAdapter = new YearAdapter(context, R.layout.mdtp_year_label_text_view, years);
+        mAdapter = new YearAdapter(context, R.layout.jmdtp_year_label_text_view, years);
         setAdapter(mAdapter);
     }
 

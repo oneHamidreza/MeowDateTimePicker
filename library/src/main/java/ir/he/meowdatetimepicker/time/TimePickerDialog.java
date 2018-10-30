@@ -37,15 +37,15 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Locale;
+
 import ir.he.meowdatetimepicker.HapticFeedbackController;
-import ir.he.meowdatetimepicker.R;
 import ir.he.meowdatetimepicker.MeowTypefaceHelper;
+import ir.he.meowdatetimepicker.R;
 import ir.he.meowdatetimepicker.Utils;
 import ir.he.meowdatetimepicker.time.RadialPickerLayout.OnValueSelectedListener;
 import ir.he.meowdatetimepicker.utils.LanguageUtils;
-
-import java.util.ArrayList;
-import java.util.Locale;
 
 /**
  * Dialog to set a time.
@@ -221,7 +221,7 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
             Bundle savedInstanceState) {
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
-        View view = inflater.inflate(R.layout.mdtp_time_picker_dialog, null);
+        View view = inflater.inflate(R.layout.jmdtp_time_picker_dialog, null);
         KeyboardListener keyboardListener = new KeyboardListener();
         view.findViewById(R.id.time_picker_dialog).setOnKeyListener(keyboardListener);
 
@@ -374,16 +374,16 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
         int circleBackground = res.getColor(R.color.mdtp_circle_background);
         int line = res.getColor(R.color.mdtp_line_background);
         int timeDisplay = res.getColor(R.color.mdtp_numbers_text_color);
-        ColorStateList doneTextColor = res.getColorStateList(R.color.mdtp_done_text_color);
-        int doneBackground = R.drawable.mdtp_done_background_color;
+        ColorStateList doneTextColor = res.getColorStateList(R.color.jmdtp_done_text_color);
+        int doneBackground = R.drawable.jmdtp_done_background_color;
         int backgroundColor = res.getColor(R.color.mdtp_background_color);
         int darkBackgroundColor = res.getColor(R.color.mdtp_light_gray);
 
         int darkGray = res.getColor(R.color.mdtp_dark_gray);
         int lightGray = res.getColor(R.color.mdtp_light_gray);
         int darkLine = res.getColor(R.color.mdtp_line_dark);
-        ColorStateList darkDoneTextColor = res.getColorStateList(R.color.mdtp_done_text_color_dark);
-        int darkDoneBackground = R.drawable.mdtp_done_background_color_dark;
+        ColorStateList darkDoneTextColor = res.getColorStateList(R.color.jmdtp_done_text_color_dark);
+        int darkDoneBackground = R.drawable.jmdtp_done_background_color_dark;
 
         // Set the colors for each view based on the theme.
         //view.findViewById(R.id.time_display_background).setBackgroundColor(mThemeDark? darkGray : accent);

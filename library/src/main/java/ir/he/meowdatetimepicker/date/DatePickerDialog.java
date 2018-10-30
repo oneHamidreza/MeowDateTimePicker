@@ -36,16 +36,16 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import ir.he.meowdatetimepicker.HapticFeedbackController;
-import ir.he.meowdatetimepicker.R;
-import ir.he.meowdatetimepicker.MeowTypefaceHelper;
-import ir.he.meowdatetimepicker.Utils;
-import ir.he.meowdatetimepicker.utils.LanguageUtils;
-import ir.he.meowdatetimepicker.utils.PersianCalendar;
-
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashSet;
+
+import ir.he.meowdatetimepicker.HapticFeedbackController;
+import ir.he.meowdatetimepicker.MeowTypefaceHelper;
+import ir.he.meowdatetimepicker.R;
+import ir.he.meowdatetimepicker.Utils;
+import ir.he.meowdatetimepicker.utils.LanguageUtils;
+import ir.he.meowdatetimepicker.utils.PersianCalendar;
 
 /**
  * Dialog allowing users to select a date.
@@ -211,7 +211,7 @@ public class DatePickerDialog extends DialogFragment implements
         Log.d(TAG, "onCreateView: ");
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
-        View view = inflater.inflate(R.layout.mdtp_date_picker_dialog, null);
+        View view = inflater.inflate(R.layout.jmdtp_date_picker_dialog, null);
 
         mDayOfWeekView = (TextView) view.findViewById(R.id.date_picker_header);
         mMonthAndDayView = (LinearLayout) view.findViewById(R.id.date_picker_month_and_day);
