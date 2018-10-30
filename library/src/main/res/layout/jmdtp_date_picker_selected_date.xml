@@ -32,7 +32,7 @@
         android:layout_gravity="center"
         android:clickable="true"
         android:orientation="vertical"
-        android:textColor="@color/mdtp_date_picker_selector" >
+        android:textColor="@color/jmdtp_date_picker_selector">
 
         <TextView
             android:id="@+id/date_picker_month"
@@ -41,7 +41,7 @@
             android:duplicateParentState="true"
             android:gravity="center_horizontal|bottom"
             android:includeFontPadding="false"
-            android:textColor="@color/mdtp_date_picker_selector"
+            android:textColor="@color/jmdtp_date_picker_selector"
             android:textSize="@dimen/mdtp_selected_date_month_size"
             tools:text="May"/>
 
@@ -55,7 +55,7 @@
             android:duplicateParentState="true"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:textColor="@color/mdtp_date_picker_selector"
+            android:textColor="@color/jmdtp_date_picker_selector"
             android:textSize="@dimen/mdtp_selected_date_day_size"
             tools:text="15"/>
     </ir.he.meowdatetimepicker.AccessibleLinearLayout>
@@ -67,7 +67,7 @@
         android:layout_gravity="center"
         android:gravity="center_horizontal|top"
         android:includeFontPadding="false"
-        android:textColor="@color/mdtp_date_picker_selector"
+        android:textColor="@color/jmdtp_date_picker_selector"
         android:textSize="@dimen/mdtp_selected_date_year_size"
         tools:text="2015" />
 
